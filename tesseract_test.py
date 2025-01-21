@@ -22,11 +22,11 @@ gray = cv2.cvtColor(images, cv2.COLOR_BGR2GRAY)
 # checking if thresh or blur
 if args["pre_processor"]=="thresh":
     cv2.threshold(gray, 0,255,cv2.THRESH_BINARY | cv2.THRESH_OTSU)[1]
-if args["pre_processor"]=="blur":
-    cv2.medianBlur(gray, 3)
+elif args["pre_processor"]=="blur":
+    gray = cv2.medianBlur(gray, 3)
 
 # memory usage with image, adding image to memory
-filename = "Images/title.jpg".format(os.getpid())
+filename = "{}.jpg".format(os.getpid())
 cv2.imwrite(filename, gray)
 text = pytesseract.image_to_string(Image.open(filename))
 os.remove(filename)
