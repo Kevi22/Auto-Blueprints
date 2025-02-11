@@ -1,0 +1,5 @@
+train: dataset/images/train
+val: dataset/images/train  # No validation set, so use train for now
+
+nc: 1  # Number of classes (update if you have more)
+names: ["window"]  # Update based on your object names
