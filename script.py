@@ -6,10 +6,10 @@ import shutil
 image_dir = "data_warehouse/Kindergardens"  # Folder where all your images are
 label_dir = "data_warehouse/"  # Folder where all your labels are
 
-train_image_dir = "dataset/images/train"
-val_image_dir = "dataset/images/val"
-train_label_dir = "dataset/labels/train"
-val_label_dir = "dataset/labels/val"
+train_image_dir = "yolov5/datasets/images/train"
+val_image_dir = "yolov5/datasets/images/val"
+train_label_dir = "yolov5/datasets/labels/train"
+val_label_dir = "yolov5/datasets/labels/val"
 
 # Create directories if they don't exist
 for d in [train_image_dir, val_image_dir, train_label_dir, val_label_dir]:
