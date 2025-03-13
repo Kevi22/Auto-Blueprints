@@ -4,7 +4,7 @@ import shutil
 
 # Define paths
 image_dir = "data_warehouse/Kindergardens"  # Folder where all your images are
-label_dir = "data_warehouse/"  # Folder where all your labels are
+label_dir = "data_warehouse/txt_files"  # Folder where all your labels are
 
 train_image_dir = "yolov5/datasets/images/train"
 val_image_dir = "yolov5/datasets/images/val"
