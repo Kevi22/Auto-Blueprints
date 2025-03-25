@@ -1,0 +1,4 @@
+train: datasets/images/train
+val: datasets/images/val
+nc: 3
+names: ["Window", "FF", "FÖ"]
